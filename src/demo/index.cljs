@@ -19,6 +19,8 @@
 (j/defc= transformula
   (specter-trans seed))
 
+(j/defc= t (reduce + transformula))
+
 (j/cell=
  (do
    (.clear js/console)
